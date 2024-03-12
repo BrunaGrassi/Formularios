@@ -13,14 +13,38 @@
             font-size: 30px;
             margin: 20px 0;
         }
+
+        fieldset {
+            max-width: 400px;
+        }
     </style>
 </head>
 <body>
+    <br>
     <form action="https://www.google.com.br/search" method="get" target="_blank">
-        <label>Faça uma busca</label>
-        <br>
-        <input type="text" name="q">
-        <input type="submit" value="BUSCAR">
+        <fieldset>
+            <label for="busca">Faça uma busca</label>
+            <br>
+            <input type="text" name="q" id="busca">
+            <input type="submit" value="BUSCAR">
+        </fieldset>
     </form>
+    <br><br>
+
+    <form action="" method="post">
+        <fieldset>
+            <label for="usuario">Nome de usuário:</label>
+            <br>
+            <input type="text" id="usuario" required autofocus>
+            <br>
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" id="senha" required>
+            <br><br>
+            <input type="submit" value="Entrar">
+        </fieldset>
+    </form>
+
+
 </body>
 </html>
