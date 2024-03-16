@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" required>
+            <br><br>
+            <label for="qtdFilhos">Quantidade de Filhos:</label>
+            <br>
+
+            <input type="number" id="qtdFilhos" min="0" max="15" required>
+            <br><br>
+            <label for="date">Data de Nascimento:</label>
+            <br>
+            <input type="date" id="date" min="1920-01-01" max="2006-01-01" required>
+            <br><br>
+
+            Possui atividade etxra?
+            <br>
+            <label>
+                <input type="radio" name="atdvExtra"> Sim
+            </label>
+            <label>
+                <input type="radio" name="atdvExtra"> Não
+            </label>
+            <br><br>
+
+            <input type="submit">
+
+        </fieldset>
+    </form>
+</body>
+</html>
