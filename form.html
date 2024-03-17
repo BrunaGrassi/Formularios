@@ -27,15 +27,82 @@
             Possui atividade etxra?
             <br>
             <label>
-                <input type="radio" name="atdvExtra"> Sim
+                <input type="radio" value="s" name="atdvExtra"> Sim
             </label>
             <label>
-                <input type="radio" name="atdvExtra"> Não
+                <input type="radio" value="n" name="atdvExtra"> Não
             </label>
             <br><br>
 
             <input type="submit">
+        </fieldset>
 
+        <fieldset>
+            <legend>Área de Interesse</legend>
+            <label>
+                <input type="checkbox" name="interesse" value="html"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="interesse"  value="css"> CSS
+            </label>
+            <label>
+                <input type="checkbox" name="interesse"  value="js"> JavaScript
+            </label>
+            <label>
+                <input type="checkbox" name="interesse"  value="python"> Python
+            </label>
+            <label>
+                <input type="checkbox" name="interesse"  value="java"> Java
+            </label>
+            <br><br>
+            <label>
+                Escolha uma Linguagem:
+                <br>
+                <select name="linguagem" required>
+                    <option value="">Selecione uma</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+            </label>
+            <br><br>
+
+            <select name="linguagem2" required>
+                <option value="">Selecione uma</option>
+
+                <optgroup label="frontend">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            Linguagem:
+            <br>
+            <input type="text" list="linguagemList">
+            <datalist id="linguagemList">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="Python">
+                <option value="Java">
+                <option value="PHP">
+                <option value="TypeScript">
+                <option value="Flutter">
+                <option value="Ruby">
+                <option value="Go">
+            </datalist>
+            <br><br>
+
+            <input type="submit">
         </fieldset>
     </form>
 </body>
